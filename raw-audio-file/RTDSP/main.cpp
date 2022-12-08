@@ -7,7 +7,7 @@
 #include <alsa/asoundlib.h>
 
 //Input Audio File Directory
-#define AUDIO_FILE_DIR "/media/rafael-user/HDD2/Common/AudioFiles/RAW/Moskau_stereo_44100_16bit.raw"
+#define AUDIO_FILE_DIR "/home/user/Music/audio.raw"
 //Audio Playback Device. Set as "default" to use system default playback device.
 #define AUDIO_DEV "plughw:0,0"
 
