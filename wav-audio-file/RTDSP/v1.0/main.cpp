@@ -6,7 +6,7 @@
 #include "rtdsp_params.h"
 
 #define DSP_16BIT2CH 0
-#define DSP_24BIT2CH 1
+//#define DSP_24BIT2CH 1
 
 std::fstream audio_file;
 unsigned int audio_file_size = 0;
@@ -85,7 +85,7 @@ int audio_file_get_params(void)
 	free(header_info);
 
 	if(stereo && (bit_depth == 16)) return DSP_16BIT2CH;
-	if(stereo && (bit_depth == 24)) return DSP_24BIT2CH;
+	//if(stereo && (bit_depth == 24)) return DSP_24BIT2CH;
 	return -1;
 }
 
@@ -126,9 +126,9 @@ int main(int argc, char **argv)
 			cmd_line = "./rtdsp_16bit2ch ";
 			break;
 
-		case DSP_24BIT2CH:
+		/*case DSP_24BIT2CH:
 			cmd_line = "./rtdsp_24bit2ch ";
-			break;
+			break;*/
 	}
 
 	cmd_line += WAVE_FILE_DIR;
