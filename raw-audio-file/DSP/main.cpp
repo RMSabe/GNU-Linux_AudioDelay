@@ -5,8 +5,8 @@
 #include <iostream>
 #include <string>
 
-#define INPUT_FILE_DIR "/media/rafael-user/HDD2/Common/AudioFiles/RAW/Moskau_stereo_44100_16bit.raw"
-#define OUTPUT_FILE_DIR "/media/rafael-user/HDD2/Common/AudioFiles/RAW/tmp/audioDSP.raw"
+#define INPUT_FILE_DIR "/home/user/Music/input_audio.raw"
+#define OUTPUT_FILE_DIR "/home/user/Music/output_audio.raw"
 
 #define BUFFER_SIZE_SAMPLES 65536
 
@@ -19,7 +19,9 @@
 //Enable/Disable alternating feedback polarity.
 #define DSP_FEEDBACK_POL_ALTERNATE
 
-//Set delay cycle divider increase. If defined, cycle divider will be equal to cycle number. Else, cycle divider will increase exponentially.
+//Set delay cycle divider increase. 
+//If defined, cycle divider will be equal to cycle number + 1. 
+//Else, cycle divider will increase exponentially.
 #define DSP_CYCLE_DIV_INC_ONE
 
 #define BUFFER_SIZE_BYTES (2*BUFFER_SIZE_SAMPLES)
