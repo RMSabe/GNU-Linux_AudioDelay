@@ -23,5 +23,20 @@ v1.1 Update:
 Now there's a command line interface. User may change the dsp parameters during runtime.
 The dsp parameters in rtdsp_params.h are still valid as a preset.
 
+v1.2 Update:
+There's no longer "rtdsp_params.h" file in the project. 
+Audio Output Device and File Directory are passed by user as arguments when starting the application.
+"--help" argument also available.
+Unlike the previous versions, this doesn't need to be recompiled to set audio device and file directory.
+Recompiling "main.cpp" will be necessary only if user wants to change preset parameters (defined in "main.cpp").
+
+Note (v1.1 Update and forward): 
+When using the default system audio output, I noticed there's a big response delay after changing the parameters. 
+(The code works fine, but it takes too long to lock and load the new settings).
+This is probably being caused because the ALSA buffers are to big. 
+It is possible to change that by changing the ALSA buffer size, but I suggest user don't use the system default audio output for this project.
+
+Remember: I'm not a professional developer. I made these just for fun. Don't expect professional performance from them.
+
 Author: Rafael Sabe 
 Email: rafaelmsabe@gmail.com
