@@ -25,7 +25,7 @@ Now there's a command line interface. User may change the dsp parameters during 
 The dsp parameters in rtdsp_params.h are still valid as a preset.
 
 v1.2 Update:
-There's no longer "rtdsp_params.h" file in the project. 
+Same thing as v1.1, however there's no longer a "rtdsp_params.h" file in the project. 
 Audio Output Device and File Directory are passed by user as arguments when starting the application.
 "--help" argument also available.
 Unlike the previous versions, this doesn't need to be recompiled to set audio device and file directory.
