@@ -30,6 +30,10 @@ Audio Output Device and File Directory are passed by user as arguments when star
 Unlike the previous versions, this doesn't need to be recompiled to set audio device and file directory.
 Recompiling "main.cpp" will be necessary only if user wants to change preset parameters (defined in "main.cpp").
 
+v1.3 Update:
+Same thing as v1.2, but code is tiddier and better optimized.
+"--help" argument is no longer available, instead, "--help" list will automatically appear if user don't add the necessary arguments.
+
 Note (v1.1 Update and forward): 
 When using the default system audio output, I noticed there's a big response delay after changing the parameters. 
 (The code works fine, but it takes too long to lock and load the new settings).
