@@ -123,11 +123,11 @@ int main(int argc, char **argv)
 	switch(n_return)
 	{
 		case DSP_16BIT2CH:
-			cmd_line = "./rtdsp_16bit2ch ";
+			cmd_line = "./rtdsp_16bit2ch.elf ";
 			break;
 
 		/*case DSP_24BIT2CH:
-			cmd_line = "./rtdsp_24bit2ch ";
+			cmd_line = "./rtdsp_24bit2ch.elf ";
 			break;*/
 	}
 
