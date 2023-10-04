@@ -18,7 +18,6 @@
 #define DSP_CYCLE_DIV_INC_ONE 1
 
 #define DSP_16BIT2CH 0
-//#define DSP_24BIT2CH 1
 
 std::fstream audio_file;
 char *file_dir = NULL;
@@ -72,10 +71,6 @@ int main(int argc, char **argv)
 		case DSP_16BIT2CH:
 			cmd_line = "./rtdsp_16bit2ch.elf ";
 			break;
-
-		/*case DSP_24BIT2CH:
-			cmd_line = "./rtdsp_24bit2ch.elf ";
-			break;*/
 	}
 
 	cmd_line += file_dir;
@@ -185,7 +180,6 @@ int audio_file_get_params(void)
 	free(header_info);
 
 	if(stereo && (bit_depth == 16)) return DSP_16BIT2CH;
-	//if(stereo && (bit_depth == 24)) return DSP_24BIT2CH;
 	return -1;
 }
 
