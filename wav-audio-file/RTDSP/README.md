@@ -8,7 +8,7 @@ This code has several .cpp files. Each one of them generates an individual execu
 The other executables will be called from "main" as necessary.
 
 When compiling, all executables except "main" should be named as their source files. 
-Example: executable from "rtdsp_16bit2ch.cpp" should be named "rtdsp_16bit2ch". 
+Example: executable from "rtdsp_16bit2ch.cpp" should be named "rtdsp_16bit2ch.elf". 
 If executable names (apart from "main") don't match their source file names, user will need to make changes on "main.cpp" in order to make the code run properly.
 
 "rtdsp_params.h" file is the user settings file where user sets input file directory, output audio device and dsp parameters. 
