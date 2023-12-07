@@ -1,7 +1,7 @@
 An audio delay real time digital signal processing application for GNU-Linux systems.
 
 This code plays audio files in wave (.wav) format. 
-Currently, the only supported formats are stereo, 16bit and 24bit. Sample rate compatibility depends on your audio hardware.
+Currently, the only supported formats are mono and stereo, 16bit and 24bit. Sample rate compatibility depends on your audio hardware.
 
 This code has several .cpp files. Each one of them generates an individual executable. 
 "main.cpp" generates the main executable, which should be called by user to start the program. 
@@ -40,11 +40,12 @@ Same thing as v1.2, but code is tiddier and better optimized.
 v1.4 Update:
 Same thing as v1.3, except now it also supports stereo 24bit audio format.
 
+v1.5 Update:
+Same thing as v1.4, except now it also supports mono 16bit and 24bit audio formats.
+
 Note (v1.1 Update and forward): 
-When using the default system audio output, I noticed there's a big response delay after changing the parameters. 
+If your audio playback device buffer is too big, you might notice a delay when changing settings. 
 (The code works fine, but it takes too long to lock and load the new settings).
-This is probably being caused because the ALSA buffers are to big. 
-It is possible to change that by changing the ALSA buffer size, but I suggest user don't use the system default audio output for this project.
 
 Remember: I'm not a professional developer. I made these just for fun. Don't expect professional performance from them.
 
