@@ -16,12 +16,12 @@ If executable names (apart from "main") don't match their source file names, use
 
 v1.0:
 The main executable must be called from within its directory, and must receive 6 arguments:
-Input audio file directory
-Output audio file directory
-Delay time (in number of samples)
-Number of feedback loops
-Alternate feedback polarity (1 == active / 0 == not active)
-Select cycle divider (1 == cycle divider increments by 1 / 0 == cycle divider increments exponentially)
+Input audio file directory,
+Output audio file directory,
+Delay time (in number of samples),
+Number of feedback loops,
+Alternate feedback polarity (1 == active / 0 == not active),
+Select cycle divider (1 == cycle divider increments by 1 / 0 == cycle divider increments exponentially).
 
 Remember: I'm not a professional developer, I made these just for fun. Don't expect professional performance from them.
 
